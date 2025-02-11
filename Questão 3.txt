@@ -1,0 +1,21 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro vetor[6]
+
+        // Ler os valores inteiros pares
+        para (inteiro i = 0; i < 6; i++)
+        {
+            escreva("Digite um valor inteiro par ", i + 1, ": ")
+            leia(vetor[i])
+        }
+
+        // Apresentar os valores na ordem inversa
+        escreva("Valores na ordem inversa: ")
+        para (inteiro i = 5; i >= 0; i--)
+        {
+            escreva(vetor[i], " ")
+        }
+    }
+}

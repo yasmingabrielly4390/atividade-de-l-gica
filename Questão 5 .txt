@@ -1,0 +1,43 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro vetor1[10]
+        inteiro vetor2[10]
+        inteiro vetor3[10]
+
+        // Ler os valores do primeiro vetor
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("Digite o valor ", i + 1, " do primeiro vetor: ")
+            leia(vetor1[i])
+        }
+
+        // Ler os valores do segundo vetor
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("Digite o valor ", i + 1, " do segundo vetor: ")
+            leia(vetor2[i])
+        }
+
+        // Calcular o terceiro vetor 
+        para (inteiro i = 0; i < 10; i++)
+        {
+            se (i % 2 == 0)
+            {
+                vetor3[i] = vetor1[i]
+            }
+            senao
+            {
+                vetor3[i] = vetor2[i]
+            }
+        }
+
+        // Apresentar o terceiro vetor
+        escreva("Valores do terceiro vetor: ")
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva(vetor3[i], " ")
+        }
+    }
+}

@@ -1,0 +1,41 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro vetor[5]
+        inteiro maior, menor
+        inteiro posMaior, posMenor
+
+        // Ler os valores do vetor
+        para (inteiro i = 0; i < 5; i++)
+        {
+            escreva("Digite o valor ", i + 1, ": ")
+            leia(vetor[i])
+        }
+
+        // começar maior e menor com o primeiro valor do vetor
+        maior = vetor[0]
+        menor = vetor[0]
+        posMaior = 0
+        posMenor = 0
+
+        // Encontrar as posições do maior e menor valor
+        para (inteiro i = 1; i < 5; i++)
+        {
+            se (vetor[i] > maior)
+            {
+                maior = vetor[i]
+                posMaior = i
+            }
+            se (vetor[i] < menor)
+            {
+                menor = vetor[i]
+                posMenor = i
+            }
+        }
+
+        // Mostrar as posições do maior e menor valor
+        escreva("A posição do maior valor (", maior, ") é: ", posMaior, "\n")
+        escreva("A posição do menor valor (", menor, ") é: ", posMenor)
+    }
+}
